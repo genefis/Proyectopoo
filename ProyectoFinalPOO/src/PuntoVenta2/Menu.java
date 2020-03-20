@@ -489,7 +489,7 @@ public class Menu extends javax.swing.JFrame {
                 Subtotal1 = Precio1;
                 Double total = Double.parseDouble(Precio1.getText());
                 Double iva = Double.parseDouble(Iva.getText());
-                double valor = total - (total * iva / 100);
+                double valor = total + (total * iva / 100);
                 String v = Double.toString(valor);
                 
                   Total1.setText(v);
